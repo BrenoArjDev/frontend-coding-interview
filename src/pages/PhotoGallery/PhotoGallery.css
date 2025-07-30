@@ -1,0 +1,45 @@
+.gallery-container {
+  padding: 32px;
+  max-width: 70%;
+  margin: auto;
+  @media screen and (max-width: 992px) {
+    max-width: 100%;
+  }
+}
+
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.photo-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  max-width: 80%;
+  @media screen and (max-width: 992px) {
+    max-width: 60%;
+  }
+}
+
+.star {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 4px;
+  user-select: none;
+}
